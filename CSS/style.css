@@ -1,0 +1,121 @@
+#titulo{
+  COLOR: tomato;
+}
+p.especial {
+  color: aquamarine;
+}
+p.texto {
+  COLOR: green;
+}
+
+div p {
+  COLOR: RED;
+}
+
+div h2, h3 {
+  color: yellowgreen;
+}
+
+*{
+  font-size: 24px;
+  /* color: black; */
+}
+
+/* La ultima linia de css no funciona ya que no se aplica cuando ya se ha asigando un color anteriormente */
+/*
+.color{
+  COLOR: #FF0000;
+}
+*/
+/*
+.color {
+  color: rgb(0, 255, 255);
+}
+*/
+
+.color {
+  /* border:5px black outset; */
+  /*
+  dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+  */
+
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 5rem;
+}
+
+#fondo{
+  background-color: rgba(255, 0, 0);
+  /* opacity: 0.3; */
+  height: 200px;
+  /* background-image: url('stich.png'); */
+  
+  /* background-repeat: repeat-y; */
+  /* background-position: center bottom; */
+  background: #f00 url(stich.png) repeat-y center bottom / 100PX 100PX;
+  /* background-size: 100px 100px; */
+}
+
+.margen{
+  background-color: chocolate;
+  margin: 15px;
+  padding: 30px 15px 5px ; 
+  border: solid 1px black;
+  height: 100px;
+  width: 50px;
+  overflow: scroll;
+  outline: 1px solid red;
+}
+
+.text{
+  font-family: 'Roboto', sans-serif; 
+  text-align: center;
+  text-decoration: overline;
+  text-shadow:3px 5px 5px blue;
+}
+a:link{
+  color: blueviolet;
+}
+a:visited{
+  color: gray;
+}
+a:hover{
+  color: yellow;
+}
+a:active{
+  color: red;
+}
+ul{
+  background-color: blue;
+  list-style-type: none; 
+  padding-left: 0; 
+  /* list-style-position: inside; */
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th,td {
+  border: solid 1px #eee;
+  padding: 5px;
+}
+th{
+  background-color: tomato;
+  color: white;
+  text-align: left;
+
+}
+tr:nth-child(even){
+  background-color: #eee;
+}
+tr:hover{
+  background-color: #aaa;
+  cursor: pointer;
+}
+span{
+  display: block;
+}
+.inline{
+  display: inline;
+}
