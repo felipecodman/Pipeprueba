@@ -1,0 +1,120 @@
+html{
+  font-family: 'Montserrat', sans-serif; 
+  /* font-family: 'Water Brush', cursive; */
+  
+}
+
+body{
+  margin: 0;
+  background-color:  #efefef;
+}
+
+header {
+  background-color: #364552;
+  color: white;
+  padding: 3rem 2rem;
+}
+header h1 {
+   font-size: 4rem;
+   text-align: center;
+}
+
+.container{
+  width: 400px;
+  margin: 0 auto;
+}
+
+section article{
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+section article:hover{
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+section article h2, section article p{
+  margin: 1rem;
+}
+
+footer{
+  background-color: #222;
+  padding: 2rem;
+  color: #fff;
+}
+
+footer section {
+  float: right;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
+footer div {
+  margin: auto;
+}
+.icons-wrapper{
+  width: 200px;
+  
+  
+}
+
+/* .icons-wrapper::after{
+  content: '';
+  position: right;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(10, 214, 71);
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+} */
+
+.icon{
+  display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
+  font-size: 44px;
+  animation: float 3s ease-in-out infinite; /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
+}
+
+.ri-instagram-line{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ri-facebook-circle-line{
+  color: #1877f2;
+  animation-delay: 1s; 
+}
+
+.ri-whatsapp-line{
+  color: #25d366;
+  animation-delay: 2s; 
+}
+
+@keyframes float {
+  0%{
+      transform: translateY(0); 
+  }
+  50%{
+      transform: translateY(-15px); 
+  }
+  100%{
+      transform: translateY(0);
+  }
+}

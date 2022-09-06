@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi primera web</title>
+  <title>Mi primer web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Water+Brush&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+ 
+  
 </head>
 <body>
-    <header>
-        <h1 id="title">Mi primera web</h1Blog</h1>
+    <header id="titulo">
+        <h1 id="title">Mi primera Blog</h1>
     </header>
-    <section>
+    <section class="container">
         <article class="post">
           <h2>Titulo de mi Post</h2>
           <p>Description de mi post</p>
@@ -28,9 +35,24 @@
         </article>
     </section>
     <footer>
+      <section>
+        
       <a href="#title">Ir al titulo</a>
       <a href="mailto:admin@gmail.com">Contactame aqui</a>
+      </section>
       <p>Copyright 2022</p>
+      <div class="icons-wrapper">
+        <!-- 
+            Font icons. They are being pulled by class names from the remix icon CDN stylesheet.
+            Visit https://remixicon.com for the full list of icons and documentation.
+            The last icon class is my personal class for selecting all icons at once.
+        -->
+        <i class="ri-instagram-line icon"></i>
+        <i class="ri-facebook-circle-line icon"></i>
+        <i class="ri-whatsapp-line icon"></i>
+    </div>
     </footer>
+    
+    
 </body>
 </html>

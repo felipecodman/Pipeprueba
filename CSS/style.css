@@ -115,7 +115,52 @@ tr:hover{
 }
 span{
   display: block;
+  /* display: none; */
+  /* visibility: hidden; */
+  max-width: 300px;
+  background-color: #f00;
 }
 .inline{
   display: inline;
+}
+
+#position {
+  position: sticky;
+  left: 20px;
+  top: 25px; 
+}
+
+.left{
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.right{
+  float: right;
+}
+
+.container{
+  height: 200px;
+}
+
+.column {
+  
+  margin: 0 ;
+  padding: 10px 0px;
+  width: 33.3%; 
+}
+
+.inline-block{
+  display: inline;
+  height: 55px;
+  background-color: red;
+}
+
+.center {
+  padding: 50px 0;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: aqua;
 }
